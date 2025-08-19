@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BlueNova AI</title>
+    <link rel="stylesheet" href="chat_bot.css" />
+  </head>
+  <body>
+    <!-- Animated background glow -->
+    <div class="aurora"></div>
+
+    <header class="topbar">
+      <h1 class="brand">BlueNova AI</h1>
+      <button
+        id="themeToggle"
+        class="icon-btn"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      >
+        🌙
+      </button>
+    </header>
+
+    <main class="wrap">
+      <section class="chat-shell">
+        <div class="panel-glow"></div>
+
+        <div id="chatBox" class="chat-box">
+          <div class="msg bot">
+            Hi! I'm Nova. I can answer offline using built-in replies, or go
+            online when internet is available. Ask me anything ✨
+          </div>
+        </div>
+
+        <div class="composer">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Type your message..."
+            autocomplete="off"
+          />
+          <button id="sendBtn" class="send-btn" aria-label="Send">
+            <span class="arrow">➤</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Configuration -->
+    <script src="config.js"></script>
+    <!-- Predefined responses -->
+    <script src="responses.js"></script>
+    <!-- Offline responses -->
+    <script src="chat_off.js"></script>
+    <!-- App logic -->
+    <script src="chat_bot.js"></script>
+  </body>
+</html>
